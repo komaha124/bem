@@ -1,3 +1,7 @@
+body {
+  color: red;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,12 +18,16 @@ header {
           flex-direction: column;
 }
 
-header h1 {
-  color: #df33df;
+header h1, header section p, section header p {
+  color: #2d1e70;
 }
 
-header h1:hover {
+header h1:hover, header section p:hover, section header p:hover {
   color: #18ad68;
+}
+
+header h1::after, header section p::after, section header p::after {
+  content: 'test';
 }
 
 header p {
@@ -35,11 +43,20 @@ section p {
 }
 
 section form {
-  border: 3px solid #df33df;
+  border: 3px solid #2d1e70;
 }
 
 section button {
   border: 3px solid #df33df;
+}
+
+footer {
+  height: 24%;
+}
+
+footer p {
+  color: #558855;
+  font-size: 17px;
 }
 
 footer a {

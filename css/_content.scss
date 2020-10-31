@@ -1,0 +1,18 @@
+section {
+    h1 {
+
+    }
+    p {
+        @extend h1;
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    form {
+        border: 3px solid $titleColor;
+    }
+    button {
+        border: 3px solid #df33df;
+       }
+}
+ 
